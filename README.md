@@ -7,31 +7,9 @@ it's actually a bit tricky to figure out what they are in a cross-platform way.
 
 This package implements it in a reusable way.
 
-## Test
-
-<https://github.com/fvbommel/systemdns/blob/main/cmd/printdns/printdns.go>
-
 ## Example
 
-```go
-package main
-
-import (
-    "fmt"
-    "log"
-
-    "github.com/fvbommel/systemdns"
-)
-
-func main() {
-    resolvers, err := systemdns.GetSystemDNS()
-    if err != nil {
-        log.Fatal(err)
-    }
-
-    fmt.Printf("Resolvers: %v\n", resolvers)
-}
-```
+<https://github.com/fvbommel/systemdns/blob/1a89e78b0e8b622196654f8f763368b1f381b092/cmd/printdns/printdns.go#L11-L18>
 
 ## Under the hood
 
